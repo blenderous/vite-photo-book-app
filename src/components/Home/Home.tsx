@@ -50,7 +50,7 @@ function Home() {
           {photosList.map((photo) => {
             return <li key={photo.id}>
               <img src={photo.urls.regular} alt={photo.alt_description}/>
-              <span><Link to={"/user-photos/" + photo.user.username}>More from {photo.user.username}</Link></span>
+              <span><Link to={"/vite-photo-book-app/user-photos/" + photo.user.username}>More from {photo.user.username}</Link></span>
             </li>
           })}
         </ul>
